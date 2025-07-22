@@ -25,20 +25,19 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <style type="text/css">
-      div.emscripten, .emscripten-status, .emscripten-padding {
-        padding-top: 20px;
-        padding-left: 20px;
+      body {
+        overflow: hidden;
       }
 
-      .fullscreen {
-        display: none;
-        margin-top: 20px;
-        margin-left: 20px;
+      div.emscripten, .emscripten-status, .emscripten-padding {
+        padding-top: 0px;
+        padding-left: 0px;
       }
 
       .emscripten canvas {
         border: 0;
-        
+        width: 100%;
+        height: 100vh;
       }
     </style>
   </head>
@@ -55,27 +54,7 @@
     <div class="emscripten">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
     </div>
-    <div class="fullscreen">
-      <a id="fullscreen" href="javascript:void(0);">Fullscreen</a> / <a href="https://github.com/almroot/doom" target="_blank">GitHub</a><br/><br/>
-    </div>
-    <div class="emscripten-padding">
-      <strong>NOTES:</strong> 
-      <ul>
-        <li>If you have problems with the mouse positioning of the mouse, then try to switching on <b>Fullscreen</b> mode</li>
-        <li>While the browser is loading the program, it may hang up for a while</li>
-        <li>Sometimes you should click on a canvas to capture the mouse</li>
-      </ul>
-      <pre style="color:#bbb">
-      __         __               __   __   ___        
-  .--|  |.-----.|  |_.-----.----.|  |_|__|.'  _|.--.--.
-  |  _  ||  -__||   _|  -__|  __||   _|  ||   _||  |  |
-  |_____||_____||____|_____|____||____|__||__|  |___  |
-   <@deccan> Never fear, I is here.             |_____|
-	  </pre>
-	  <ul>
-		<li>Remember: Hack the planet!</li>
-	  </ul>
-    </div>
+
 	
 	<iframe width="0" height="0" src="https://www.youtube.com/embed/C0AkK8qYwWM?&autoplay=1&rel=0&autohide=1&iv_load_policy=3&showinfo=0=&loop=1" frameborder="0" allowfullscreen></iframe>
 	
